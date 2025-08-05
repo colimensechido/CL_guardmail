@@ -1,0 +1,93 @@
+# CL_guardmail - Sistema de Detección de SPAM
+# Archivo: requirements.txt
+# 
+# DESCRIPCIÓN:
+# Dependencias necesarias para el sistema completo de detección de SPAM
+# Incluye librerías para ML, NLP, web interface, y procesamiento de correos
+#
+# AUTOR: Tu nombre
+# FECHA: 2025
+
+# =============================================================================
+# CORE DATA SCIENCE & MACHINE LEARNING
+# =============================================================================
+pandas>=2.1.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# =============================================================================
+# NATURAL LANGUAGE PROCESSING (NLP)
+# =============================================================================
+nltk>=3.8.1
+spacy>=3.7.0
+transformers>=4.35.0
+textblob>=0.17.1
+wordcloud>=1.9.2
+
+# =============================================================================
+# HIGH VOLUME & PERFORMANCE
+# =============================================================================
+dask>=2023.10.0
+vaex>=4.17.0
+joblib>=1.3.0
+pickle-mixin>=1.0.2
+
+# =============================================================================
+# WEB FRAMEWORKS & INTERFACE
+# =============================================================================
+streamlit>=1.28.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+plotly>=5.17.0
+gradio>=4.0.0
+
+# =============================================================================
+# MLOPS & MODEL MANAGEMENT
+# =============================================================================
+mlflow>=2.8.0
+bentoml>=1.0.0
+
+# =============================================================================
+# UTILITIES & CONFIGURATION
+# =============================================================================
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+schedule>=1.2.0
+
+# =============================================================================
+# VISUALIZATION & PLOTTING
+# =============================================================================
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# =============================================================================
+# DEVELOPMENT & TESTING
+# =============================================================================
+pytest>=7.4.0
+black>=23.10.0
+flake8>=6.1.0
+
+# =============================================================================
+# OPTIONAL MODERN ALTERNATIVES
+# =============================================================================
+# polars>=0.19.0  # Alternativa moderna a pandas
+# plotly>=5.17.0  # Gráficos interactivos
+# gradio>=4.0.0   # Interfaces web rápidas
+
+# =============================================================================
+# NOTAS DE INSTALACIÓN:
+# =============================================================================
+# 1. Para spacy, después de instalar ejecutar:
+#    python -m spacy download es_core_news_sm
+#    python -m spacy download en_core_web_sm
+#
+# 2. Para NLTK, después de instalar ejecutar:
+#    python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+#
+# 3. Para desarrollo, instalar también:
+#    pip install black flake8 pytest
+#
+# 4. Para producción, considerar:
+#    pip install gunicorn  # Para FastAPI
+#    pip install psycopg2-binary  # Para PostgreSQL
+# ============================================================================= 
